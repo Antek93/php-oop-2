@@ -22,7 +22,7 @@ $star_dog_toy = new Dog_toy('Stella di plastica', './img/toydogstar.webp', 'Toys
 $chicken_dog_toy = new Dog_toy('Pollo di gomma', './img/dogchicketoy.jpg', 'Toys', 'Dog', 'S', 'Yellow', 13.99, 'Rubber');
 //--GATTI                     $name, $img, $product_type, $category, $toy_size, $color, $price
 $mouse_cat_toy = new Cat_toy('Topolino da acchiappare', './img/cattoy1.jpg', 'Toys', 'Cat', 'S', 'Black', 3.99, 'cotton');
-$bird_cat_toy = new Cat_toy('Uccellino da acchiappare', './img/birdtoy.jpg', 'Toys', 'Cat', 'M', 'Red', 5.99, 'plastic');
+$bird_cat_toy = new Cat_toy('Uccellino da acchiappare', './img/birdtoy4.webp', 'Toys', 'Cat', 'M', 'Red', 5.99, 'plastic');
 $chicken_cat_toy = new Cat_toy('Pollo da acchiappare', './img/chicken toy.jpg', 'Toys', 'Cat', 'S', 'White', 8.99, 'plastic');
 
 // -- --FOOD:
@@ -30,11 +30,11 @@ $chicken_cat_toy = new Cat_toy('Pollo da acchiappare', './img/chicken toy.jpg', 
 //--CANI                     $name, $img, $product_type, $category, $food_quantity, $food_quality, $color, $price         
 $standard_dog_food = new Dog_food('Croccantini standard', './img/dogfood1.webp', 'Food', 'Dog', '10kg', 'Standard', 17.99);
 $quality_dog_food = new Dog_food('Croccantini di qualità', './img/dogfood2.webp', 'Food', 'Dog', '10kg', 'Quality', 23.99);
-$noGluten_dog_food = new Dog_food('Croccantini senza glutine', './img/dogfood3.webp', 'Food', 'Dog', '10kg', 'Gluten Free', 43.99);
+$noGluten_dog_food = new Dog_food('Croccantini senza glutine', './img/dogfood7.webp', 'Food', 'Dog', '10kg', 'Gluten Free', 43.99);
 //--GATTI                     $name, $img, $product_type, $category, $food_quantity, $food_quality, $color, $price
 $standard_cat_food = new Cat_food('Croccantini standard', './img/catfood1.webp.crdownload', 'Food', 'Cat', '10kg', 'Standard', 17.99);
 $quality_cat_food = new Cat_food('Croccantini di qualità', './img/catfood2.png', 'Food', 'Cat', '10kg', 'Quality', 23.99);
-$noGluten_cat_food = new Cat_food('Croccantini senza glutine', './img/catfood3.webp', 'Food', 'Cat', '10kg', 'Gluten Free', 43.99);
+$noGluten_cat_food = new Cat_food('Croccantini senza glutine', './img/catfood6.jpg', 'Food', 'Cat', '10kg', 'Gluten Free', 43.99);
 
 $prodotti[] = [
     $black_dog_bed,
@@ -57,7 +57,6 @@ $prodotti[] = [
     $noGluten_cat_food
 ];
 
-// foreach ($prodotti as $index => $prodotto) da implementare
 
 ?>
 <!DOCTYPE html>
@@ -77,157 +76,21 @@ $prodotti[] = [
 
     </head>
     <main>
-        <div>
+        <div class="main-container">
             <div class="products-container">
-                <div> <!-- <div> CUCCIA CANE NERA  -->
-                    <div class="img-container">
-                        <img src="<?php echo $black_dog_bed->img ?>" alt="">
-                    </div>
-                    <div>
-                        Product Name: <?php echo $black_dog_bed->name ?>
-                    </div>
-                    <div>
-                        Category: <?php echo $black_dog_bed->category ?>
-                    </div>
-                    <div>
-                        Product Type: <?php echo $black_dog_bed->product_type ?>
-                    </div>
-                    <div>
-                        Bed-size: <?php echo $black_dog_bed->bed_size ?>
-                    </div>
-                    <div>
-                        Color: <?php echo $black_dog_bed->color ?>
-                    </div>
-                    <div>
-                        Price: <?php echo $black_dog_bed->price ?>
-                    </div>
-                </div>
-                <div> <!-- <div> CUCCIA CANE BIANCA  -->
-                    <div class="img-container">
-                        <img src="<?php echo $white_dog_bed->img ?>" alt="">
-                    </div>
-                    <div>
-                        Product Name: <?php echo $white_dog_bed->name ?>
-                    </div>
-                    <div>
-                        Category: <?php echo $white_dog_bed->category ?>
-                    </div>
-                    <div>
-                        Product Type: <?php echo $white_dog_bed->product_type ?>
-                    </div>
-                    <div>
-                        Bed-size: <?php echo $white_dog_bed->bed_size ?>
-                    </div>
-                    <div>
-                        Color: <?php echo $white_dog_bed->color ?>
-                    </div>
-                    <div>
-                        Price: <?php echo $white_dog_bed->price ?>
-                    </div>
-                </div>
-                <div> <!-- <div> CUCCIA CANE ROSSA  -->
-                    <div class="img-container">
-                        <img src="<?php echo $red_dog_bed->img ?>" alt="">
-                    </div>
-                    <div>
-                        Product Name: <?php echo $red_dog_bed->name ?>
-                    </div>
-                    <div>
-                        Category: <?php echo $red_dog_bed->category ?>
-                    </div>
-                    <div>
-                        Product Type: <?php echo $red_dog_bed->product_type ?>
-                    </div>
-                    <div>
-                        Bed-size: <?php echo $red_dog_bed->bed_size ?>
-                    </div>
-                    <div>
-                        Color: <?php echo $red_dog_bed->color ?>
-                    </div>
-                    <div>
-                        Price: <?php echo $red_dog_bed->price ?>
-                    </div>
-                </div>
-                <div> <!-- <div> CUCCIA GATTO NERA  -->
-                    <div class="img-container">
-                        <img src="<?php echo $black_cat_bed->img ?>" alt="">
-                    </div>
-                    <div>
-                        Product Name: <?php echo $black_cat_bed->name ?>
-                    </div>
-                    <div>
-                        Category: <?php echo $black_cat_bed->category ?>
-                    </div>
-                    <div>
-                        Product Type: <?php echo $black_cat_bed->product_type ?>
-                    </div>
-                    <div>
-                        Bed-size: <?php echo $black_cat_bed->bed_size ?>
-                    </div>
-                    <div>
-                        Color: <?php echo $black_cat_bed->color ?>
-                    </div>
-                    <div>
-                        Price: <?php echo $black_cat_bed->price ?>
-                    </div>
-                </div>
-                <div> <!-- <div> CUCCIA GATTO BIANCA  -->
-                    <div class="img-container">
-                        <img src="<?php echo $white_cat_bed->img ?>" alt="">
-                    </div>
-                    <div>
-                        Product Name: <?php echo $white_cat_bed->name ?>
-                    </div>
-                    <div>
-                        Category: <?php echo $white_cat_bed->category ?>
-                    </div>
-                    <div>
-                        Product Type: <?php echo $white_cat_bed->product_type ?>
-                    </div>
-                    <div>
-                        Bed-size: <?php echo $white_cat_bed->bed_size ?>
-                    </div>
-                    <div>
-                        Color: <?php echo $white_cat_bed->color ?>
-                    </div>
-                    <div>
-                        Price: <?php echo $white_cat_bed->price ?>
-                    </div>
-                </div>
-                <div> <!-- <div> CUCCIA GATTO ROSSA  -->
-                    <div class="img-container">
-                        <img src="<?php echo $red_cat_bed->img ?>" alt="">
-                    </div>
-                    <div>
-                        Product Name: <?php echo $red_cat_bed->name ?>
-                    </div>
-                    <div>
-                        Category: <?php echo $red_cat_bed->category ?>
-                    </div>
-                    <div>
-                        Product Type: <?php echo $red_cat_bed->product_type ?>
-                    </div>
-                    <div>
-                        Bed-size: <?php echo $red_cat_bed->bed_size ?>
-                    </div>
-                    <div>
-                        Color: <?php echo $red_cat_bed->color ?>
-                    </div>
-                    <div>
-                        Price: <?php echo $red_cat_bed->price ?>
-                    </div>
-                </div>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
+                <?php foreach ($prodotti as $categoria) { ?>
+                    <?php foreach ($categoria as $prodotto) { ?>
+                        <div>
+                            <div class="img-container">
+                                <img src="<?= $prodotto->img ?>" alt="<?= $prodotto->name ?>">
+                            </div>
+                            <div>
+                                <h4><?= $prodotto->name ?></h4>
+                                <p><?= $prodotto->price ?> &euro;</p>
+                            </div>
+                        </div>
+                    <?php } ?>
+                <?php } ?>
 
             </div>
         </div>
