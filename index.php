@@ -59,8 +59,6 @@ $prodotti[] = [
 
 // foreach ($prodotti as $index => $prodotto)
 
-var_dump($prodotti);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
