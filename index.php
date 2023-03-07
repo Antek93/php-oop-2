@@ -57,7 +57,7 @@ $prodotti[] = [
     $noGluten_cat_food
 ];
 
-// foreach ($prodotti as $index => $prodotto)
+// foreach ($prodotti as $index => $prodotto) da implementare
 
 ?>
 <!DOCTYPE html>
