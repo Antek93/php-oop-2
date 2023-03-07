@@ -15,24 +15,24 @@ $white_cat_bed = new Cat_bed('Cuccia Bianca', './img/catbed3.webp', 'Beds', 'Cat
 // -- --TOYS:
 
 //--CANI                      $name, $img, $product_type, $category, $toy_size, $color, $price
-$bone_dog_toy = new Dog_toy('Osso di plastica', null, 'Toys', 'Dog', 'S', 'White', 13.99, 'Plastic');
-$star_dog_toy = new Dog_toy('Stella di plastica', null, 'Toys', 'Dog', 'S', 'Red', 13.99, 'Plastic');
-$chicken_dog_toy = new Dog_toy('Pollo di gomma', null, 'Toys', 'Dog', 'S', 'Yellow', 13.99, 'Rubber');
+$bone_dog_toy = new Dog_toy('Osso di plastica', './img/dogbone.webp', 'Toys', 'Dog', 'S', 'Black', 13.99, 'Plastic');
+$star_dog_toy = new Dog_toy('Stella di plastica', './img/toydogstar.webp', 'Toys', 'Dog', 'S', 'Red', 13.99, 'Plastic');
+$chicken_dog_toy = new Dog_toy('Pollo di gomma', './img/dogchicketoy.jpg', 'Toys', 'Dog', 'S', 'Yellow', 13.99, 'Rubber');
 //--GATTI                     $name, $img, $product_type, $category, $toy_size, $color, $price
-$mouse_cat_toy = new Cat_toy('Topolino da acchiappare', null, 'Toys', 'Cat', 'S', 'Black', 3.99, 'cotton');
-$bird_cat_toy = new Cat_toy('Uccellino da acchiappare', null, 'Toys', 'Cat', 'M', 'Red', 5.99, 'plastic');
-$chicken_cat_toy = new Cat_toy('Pollo da acchiappare', null, 'Toys', 'Cat', 'S', 'White', 8.99, 'plastic');
+$mouse_cat_toy = new Cat_toy('Topolino da acchiappare', './img/cattoy1.jpg', 'Toys', 'Cat', 'S', 'Black', 3.99, 'cotton');
+$bird_cat_toy = new Cat_toy('Uccellino da acchiappare', './img/birdtoy.jpg', 'Toys', 'Cat', 'M', 'Red', 5.99, 'plastic');
+$chicken_cat_toy = new Cat_toy('Pollo da acchiappare', './img/chicken toy.jpg', 'Toys', 'Cat', 'S', 'White', 8.99, 'plastic');
 
 // -- --FOOD:
 
 //--CANI                     $name, $img, $product_type, $category, $food_quantity, $food_quality, $color, $price         
-$standard_dog_food = new Dog_food('Croccantini standard', null, 'Food', 'Dog', '10kg', 'Standard', 17.99);
-$quality_dog_food = new Dog_food('Croccantini di qualità', null, 'Food', 'Dog', '10kg', 'Quality', 23.99);
-$noGluten_dog_food = new Dog_food('Croccantini senza glutine', null, 'Food', 'Dog', '10kg', 'Gluten Free', 43.99);
+$standard_dog_food = new Dog_food('Croccantini standard', './img/dogfood1.webp', 'Food', 'Dog', '10kg', 'Standard', 17.99);
+$quality_dog_food = new Dog_food('Croccantini di qualità', './img/dogfood2.webp', 'Food', 'Dog', '10kg', 'Quality', 23.99);
+$noGluten_dog_food = new Dog_food('Croccantini senza glutine', './img/dogfood3.webp', 'Food', 'Dog', '10kg', 'Gluten Free', 43.99);
 //--GATTI                     $name, $img, $product_type, $category, $food_quantity, $food_quality, $color, $price
-$standard_cat_food = new Cat_food('Croccantini standard', null, 'Food', 'Cat', '10kg', 'Standard', 17.99);
-$quality_cat_food = new Cat_food('Croccantini di qualità', null, 'Food', 'Cat', '10kg', 'Quality', 23.99);
-$noGluten_cat_food = new Cat_food('Croccantini senza glutine', null, 'Food', 'Cat', '10kg', 'Gluten Free', 43.99);
+$standard_cat_food = new Cat_food('Croccantini standard', './img/catfood1.webp.crdownload', 'Food', 'Cat', '10kg', 'Standard', 17.99);
+$quality_cat_food = new Cat_food('Croccantini di qualità', './img/catfood2.png', 'Food', 'Cat', '10kg', 'Quality', 23.99);
+$noGluten_cat_food = new Cat_food('Croccantini senza glutine', './img/catfood3.webp', 'Food', 'Cat', '10kg', 'Gluten Free', 43.99);
 
 // $final_products = [
 //     $black_dog_bed,
