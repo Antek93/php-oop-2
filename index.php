@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . './CategorizedProducts.php';
 
+$prodotti = [];
+
 // -- --CUCCE:
 
 //--CANI                      $name, $img, $product_type, $category, $bed_size, $color, $price)
@@ -34,26 +36,30 @@ $standard_cat_food = new Cat_food('Croccantini standard', './img/catfood1.webp.c
 $quality_cat_food = new Cat_food('Croccantini di qualità', './img/catfood2.png', 'Food', 'Cat', '10kg', 'Quality', 23.99);
 $noGluten_cat_food = new Cat_food('Croccantini senza glutine', './img/catfood3.webp', 'Food', 'Cat', '10kg', 'Gluten Free', 43.99);
 
-// $final_products = [
-//     $black_dog_bed,
-//     $red_dog_bed,
-//     $white_dog_bed,
-//     $black_cat_bed,
-//     $red_cat_bed,
-//     $white_cat_bed,
-//     $bone_dog_toy,
-//     $star_dog_toy,
-//     $chicken_dog_toy,
-//     $mouse_cat_toy,
-//     $bird_cat_toy,
-//     $chicken_cat_toy,
-//     $standard_dog_food,
-//     $quality_dog_food,
-//     $noGluten_dog_food,
-//     $standard_cat_food,
-//     $quality_cat_food,
-//     $noGluten_cat_food,
-// ];
+$prodotti[] = [
+    $black_dog_bed,
+    $red_dog_bed,
+    $white_dog_bed,
+    $black_cat_bed,
+    $red_cat_bed,
+    $white_cat_bed,
+    $bone_dog_toy,
+    $star_dog_toy,
+    $chicken_dog_toy,
+    $mouse_cat_toy,
+    $bird_cat_toy,
+    $chicken_cat_toy,
+    $standard_dog_food,
+    $quality_dog_food,
+    $noGluten_dog_food,
+    $standard_cat_food,
+    $quality_cat_food,
+    $noGluten_cat_food
+];
+
+// foreach ($prodotti as $index => $prodotto)
+
+var_dump($prodotti);
 
 ?>
 <!DOCTYPE html>
